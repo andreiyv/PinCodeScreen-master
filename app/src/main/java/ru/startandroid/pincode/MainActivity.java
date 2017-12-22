@@ -8,6 +8,8 @@ import butterknife.OnClick;
 import ru.startandroid.pincode.app.App;
 import ru.startandroid.pincode.pin.mvp.PinCodeActivity;
 
+// Это основной экран приложения.
+
 public class MainActivity extends AppCompatActivity {
 
     @Override

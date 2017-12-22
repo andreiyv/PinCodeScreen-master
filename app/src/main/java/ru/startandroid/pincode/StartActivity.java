@@ -8,6 +8,8 @@ import ru.startandroid.pincode.app.App;
 import ru.startandroid.pincode.pin.mvp.PinCodeActivity;
 import ru.startandroid.pincode.storage.Preferences;
 
+// Это техническое Activity, без layout. С него стартует приложение.
+
 public class StartActivity extends AppCompatActivity {
 
     @Override

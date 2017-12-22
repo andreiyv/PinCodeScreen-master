@@ -3,6 +3,8 @@ package ru.startandroid.pincode.storage;
 import android.content.Context;
 import android.content.SharedPreferences;
 
+// Класс по работе с префами. Используется для чтения/записи пин кода.
+
 public class Preferences {
 
     final static String FILE_NAME = "preferences";
