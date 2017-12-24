@@ -48,6 +48,9 @@ public class PinCodeActivity extends AppCompatActivity implements PinCodeContrac
     @Inject
     PinCodeContract.Presenter presenter;
 
+    //
+    //                        2
+    //
 
     public static void createPinCode(Context context) {
         startActivity(context, Constants.PinCodeMode.CREATE);
@@ -61,6 +64,9 @@ public class PinCodeActivity extends AppCompatActivity implements PinCodeContrac
         startActivity(context, Constants.PinCodeMode.CHANGE);
     }
 
+    //
+    //                        1
+    //
     private static void startActivity(Context context, Constants.PinCodeMode pinCodeMode) {
         Intent intent = new Intent(context, PinCodeActivity.class);
         intent.putExtra(Constants.EXTRA_MODE, pinCodeMode);
@@ -74,6 +80,10 @@ public class PinCodeActivity extends AppCompatActivity implements PinCodeContrac
         setContentView(R.layout.pincode_activity);
         initView();
 
+
+        //
+        //                        3
+        //
         // extract PIN code screen mode from intent
         Constants.PinCodeMode pinCodeMode = (Constants.PinCodeMode)
                 getIntent().getSerializableExtra(Constants.EXTRA_MODE);

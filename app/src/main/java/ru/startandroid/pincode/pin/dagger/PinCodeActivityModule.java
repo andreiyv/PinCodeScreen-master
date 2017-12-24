@@ -22,6 +22,7 @@ public class PinCodeActivityModule implements ActivityModule {
     @PinCodeActivityScope
     @Provides
     PinCodeContract.Presenter providePinCodePresenter(Preferences preferences) {
+        // Это три разных класса, но все они реализуют интерфейс PinCodeContract.Presenter.
         switch (pinCodeMode) {
             case CREATE:
                 return new PinCodeCreatePresenter(preferences);
